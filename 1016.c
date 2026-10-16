@@ -20,9 +20,10 @@ int main ()
     second->data=30;
     head->next=second;
     second->next=NULL;
-    
+
     printf("First Node : %d\n", head->data);
     printf("Second Node : %d\n", second->data);
     free(second);
+    free(head);
     return 0;
 }
